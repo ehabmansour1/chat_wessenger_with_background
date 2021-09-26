@@ -1,0 +1,309 @@
+/* start variables */
+:root {
+  --main-color: hsl(199deg 100% 50%);
+}
+/* end variables */
+
+/* start global rules */
+* {
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  /* font-family: 'Oswald', sans-serif; */
+  font-family: 'Titillium Web', sans-serif;
+}
+
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+html {
+    scroll-behavior: smooth;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.gridy {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+  padding: 25px;
+  grid-gap: 20px;
+}
+/* End Global Rules */
+body {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1000%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M357.4359875276204 274.07482024281603L274.23275375005704 412.54825508402826 412.7061885912693 495.7514888615916 495.9094223688327 357.2780540203794z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M704.0250500466315 247.7167779272711L755.2491357906324 388.4537968411212 895.9861547044825 337.22971109712023 844.7620689604815 196.49269218327015z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M886.2574406314689 410.6975890579403L869.1548115839014 322.7121901076266 745.7280276822145 392.3588331541347z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M855.511443956432-75.78718733953151L755.7472857836977 83.53077801417098 919.8429679669331 92.13066830733004z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M257.1182283210342-51.05621170900815L177.42618286448942 62.75582416295833 291.2382187364559 142.44786961950314 370.9302641930007 28.635833747536665z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1397.185%2c473.833C1415.75%2c474.091%2c1433.919%2c466.558%2c1443.787%2c450.83C1454.29%2c434.091%2c1455.366%2c413.126%2c1446.287%2c395.574C1436.405%2c376.47%2c1418.685%2c361.356%2c1397.185%2c360.737C1374.716%2c360.091%2c1352.985%2c372.496%2c1342.933%2c392.601C1333.697%2c411.074%2c1341.3%2c432.391%2c1352.771%2c449.566C1362.813%2c464.602%2c1379.106%2c473.582%2c1397.185%2c473.833' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1000'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-attachment: fixed;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 2fr  3fr;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  min-height: calc(100vh - 100px);
+  margin-left: 15px;
+  margin-right: 15px;
+  
+}
+.list {
+  padding: 30px;
+}
+.contacts a {
+  text-decoration: none;
+}
+.contacts a h5 {
+  color: black;
+}
+.list .header {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-bottom: 20px;
+  justify-content: space-between;
+}
+.list .header::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: hsl(0deg 0% 90%);
+}
+.list .header input{
+  padding: 10px;
+  background-color: hsl(204deg 15% 94%);
+  border: none;
+  border-radius: 20px;
+  width: 80%;
+}
+.list .header input:focus {
+  outline: none;
+}
+.list .header input::placeholder {
+  font-size: 14px;
+}
+.list .header i {
+  padding: 10px;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  color: white;
+  margin-left: 5px;
+}
+.contact {
+  display: flex;
+  padding: 5px 0;
+  align-items: flex-start;
+  justify-content: space-around;
+  position: relative;
+  transition-duration: .3s;
+  cursor: pointer;
+  user-select: none;
+}
+.contact::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: hsl(0deg 0% 90%);
+}
+.contact img {
+  max-width: 50px;
+
+}
+.contact .name-satues {
+  padding: 10px;
+}
+.contact .name-satues h5{
+  font-size: 15px;
+}
+.contact .name-satues p {
+  font-size: 12px;
+  color: hsl(336deg 4% 76%);
+}
+.contact .time {
+  padding: 10px;
+  font-size: 13px;
+  color: hsl(336deg 4% 76%);
+}
+.contact.active , .contact:hover {
+  background-color: hsl(199deg 100% 50%);
+  color: white !important;
+}
+.contact:hover p {
+  color: white !important;
+}
+.contact:hover div:last-child {
+  color: white !important;
+}
+.contact.active p {
+  color: white !important;
+}
+.contact.active div:last-child {
+  color: white !important;
+}
+.chat {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-left: 1px solid hsl(204deg 15% 94%);
+}
+@media (max-width:768px){
+  .chat {
+    display: none;
+  }
+  main {
+    grid-template-columns: 1fr;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    min-height: calc(100vh - 00px);
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    
+  }
+}
+.chat .header {
+  background-color: hsl(204deg 15% 94%);
+  padding: 10px 10px 10px 10px;
+}
+
+.chat .header span {
+  color: hsl(336deg 4% 76%);
+  padding-right: 4px;
+}
+.chat .footer {
+  padding:0 20px 10px;
+  display: flex;
+}
+.chat .footer input{
+  width: 75%;
+  padding: 10px;
+  background-color: hsl(204deg 15% 94%);
+  border: none;
+}
+.chat .footer input:focus {
+  outline: none;
+}
+.chat .footer button {
+  padding: 10px;
+  border: none;
+  margin: 0;
+  color: hsl(336deg 4% 76%);
+  cursor: pointer;
+}
+.chat .footer button:hover {
+  color: var(--main-color);
+}
+.contents {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+}
+.message-recieved {
+  padding: 10px;
+  background-color: var(--main-color);
+  margin-bottom: 7px;
+  width: fit-content;
+  border-radius: 5px;
+  color: white;
+  font-size: 15px;
+  position: relative;
+}
+.message-recieved::before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: -10px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent var(--main-color) transparent transparent;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.message-sent {
+  padding: 10px;
+  background-color: hsl(204deg 15% 94%);
+  margin-bottom: 7px;
+  width: fit-content;
+  border-radius: 5px;
+  color: black;
+  font-size: 15px;
+  position: relative;
+  align-self: end;
+}
+.message-sent::before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  right: -10px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent hsl(204deg 15% 94%);
+  top: 50%;
+  transform: translateY(-50%);
+}
+.contents .time {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 13px;
+  position: relative;
+  color: hsl(336deg 4% 70%);
+}
+.contents .time::before {
+  content: "";
+  position: absolute;
+  width: 30%;
+  height: 1px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  background-color: hsl(0deg 0% 90%);
+}
+.contents .time::after {
+  content: "";
+  position: absolute;
+  width: 30%;
+  height: 1px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  background-color: hsl(0deg 0% 90%);
+}
