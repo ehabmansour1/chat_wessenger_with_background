@@ -16,8 +16,18 @@
 body {
   /* font-family: 'Oswald', sans-serif; */
   font-family: 'Titillium Web', sans-serif;
+  animation-name: opacity;
+  animation-duration: 1s;
+  /* animation-fill-mode: forwards;
+  transform: rotate3d(0, 1, 0, 90deg);
+  perspective: 100px;
+  transform-style: preserve-3d; */
 }
-
+@keyframes opacity {
+  to {
+    transform: rotate3d(0, 0, 0, 0deg);
+  }
+}
 /* Small */
 @media (min-width: 768px) {
   .container {
@@ -38,6 +48,8 @@ body {
 }
 html {
     scroll-behavior: smooth;
+    transform-style: preserve-3d;
+    perspective: 900px;
 }
 .container {
   padding-left: 15px;
